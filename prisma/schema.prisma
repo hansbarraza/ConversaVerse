@@ -60,7 +60,7 @@ model User {
 model Subreddit {
   id String @id @default(cuid())
   name String @unique
-  created DateTime @default(now())
+  createdAt DateTime @default(now())
   updateAt DateTime @updatedAt
   posts Post[]
 
